@@ -24,7 +24,7 @@
  */
 
 /*** MODULEINFO
- 	<depend>res_mongodb</depend>
+    <depend>res_mongodb</depend>
     <depend>mongoc</depend>
     <depend>bson</depend>
     <support_level>extended</support_level>
@@ -346,7 +346,7 @@ static int reload_module(void)
 }
 
 AST_MODULE_INFO(ASTERISK_GPL_KEY, AST_MODFLAG_LOAD_ORDER, "MongoDB Push Dialplan Application",
-	.support_level = AST_MODULE_SUPPORT_CORE,
+	.support_level = AST_MODULE_SUPPORT_EXTENDED,
 	.load = load_module,
 	.unload = unload_module,
 	.reload = reload_module,
